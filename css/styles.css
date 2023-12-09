@@ -47,11 +47,7 @@ img {
   background-color: var(--blanco);
   border: 1px solid var(--gris);
   padding: 0.5rem 2rem;
-  transition: background-color 0.3s;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -ms-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;  
 }
 .btn:hover {
   background-color: var(--gris);
@@ -140,14 +136,10 @@ img {
  }
 }
 .navegacion a {
-  padding: .5rem;
+  padding: 0.5rem;
   transition: background-color 300ms;
   width: 100%;
-  text-align: center;
-  -webkit-transition: background-color 300ms;
-  -moz-transition: background-color 300ms;
-  -ms-transition: background-color 300ms;
-  -o-transition: background-color 300ms;
+  text-align: center;  
 }
 @media (min-width: 768px) {
   .navegacion a {
@@ -158,58 +150,69 @@ img {
   background-color: rgb(255 255 255/0.5);
   color: var(--negro);
 }
-.slogan{
+.slogan {
   text-align: center;
 }
-@media (min-width: 768px ){
-  .slogan{
+@media (min-width: 768px) {
+  .slogan {
       text-align: right;
  }
 }
-.slogan h1{
+.slogan h1 {
   font-size: 3rem;
   margin: 0;
 }
-@media (min-width: 768px ){
-  .slogan h1{
+@media (min-width: 768px) {
+  .slogan h1 {
       font-size: 5rem;
  }
 }
-.slogan p{
+.slogan p {
   margin: 0;
   line-height: 1;
 }
 /* Nosotros */
-.nosotros{
+.nosotros {
   display: grid;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
   background-image: url(../img/nosotros.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
 }
-
-@media (min-width: 992px ){ 
-  .nosotros{
-    grid-template-columns: repeat(3,1fr);
-
-  }
-  
+@media (min-width: 992px) {
+  .nosotros {
+      grid-template-columns: repeat(3, 1fr);
+ }
 }
-.contenido-nosotros{
-    background-color: var(--blanco);
-    padding: 5rem;
-    
+.contenido-nosotros {
+  background-color: var(--blanco);
+  padding: 5rem;
 }
-
-@media (min-width: 992px ){ 
-  .contenido-nosotros{
-    grid-column: 2/4;
-
-  }
-  
+@media (min-width: 992px) {
+  .contenido-nosotros {
+      grid-column: 2/4;
+ }
 }
-.contenido-nosotros h2,
-.contenido-nosotros p{
+.contenido-nosotros h2, .contenido-nosotros p {
   margin-bottom: 1rem;
-
+}
+/* Modelos */
+.modelo {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.contenido-modelo {
+  padding: 5rem;
+  background-color: var(--blanco);
+}
+.basico{
+  background-image: url(../img/modelo_basico.jpg);  
+}
+.premier{
+  background-image: url(../img/modelo_premier.jpg); 
+}
+.elite{
+  background-image: url(../img/modelo_elite.jpg); 
 }
